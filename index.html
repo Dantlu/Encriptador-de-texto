@@ -1,0 +1,72 @@
+<!DOCTYPE html>
+<html lang="es">
+
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link href="https://fonts.googleapis.com/css2?family=Inter&display=swap" rel="stylesheet">
+    <link rel="stylesheet" href="reset.css">
+    <link rel="stylesheet" href="style.css">
+    <link rel="stylesheet" href="https://stackpath.bootstrapcdn.com/font-awesome/4.7.0/css/font-awesome.min.css">
+    <title>Encriptador</title>
+</head>
+
+<body>
+    <header>
+        <a href="#">
+            <img class="logo" src="logo.png" alt="Logo de alura con la inicial da letra a">
+        </a>
+    </header>
+    <main>
+        <section class="contenedor-input">
+            <textarea class="input-texto" cols="40" rows="6" placeholder="Ingrese El Texto Aquí"></textarea>
+            <div class="desaparece">
+                <img class="exclamacion" src="exclamacion.png" alt="exclamacion">
+                <h6 class="informacion">
+                    <p>Solo letras minúsculas y sin acentos.</p>
+                </h6>
+            </div>
+            <div class="botones">
+                <button class="encriptar" onclick="btnEncriptar()">
+                    <p>Encriptar</p>
+                </button>
+                <button class="desencriptar" onclick="btnDesencriptar()">
+                    <p>Desencriptar</p>
+                </button>
+            </div>
+        </section>
+        <section class="mensaje-box">
+            <textarea class="mensaje" cols="18" rows="8"></textarea>
+            <img class="mujer" src="Muñeco.png" alt="mujer buscando">
+
+            <div class="temporal">
+                <h2>Ningún mensaje fue encontrado</h2>
+                <p>Ingresa el texto que desees encriptar o desencriptar.</p>
+            </div>
+
+            <button class="copiar" onclick="copiar()">
+                <p>Copiar</p>
+            </button>
+        </section>
+    </main>
+    <footer>
+        <div class="footer-content">
+            <h3>Encriptador</h3>
+            <ul class="socials">
+                <li><a href="https://www.linkedin.com/in/dante-luongo-459354218/"><i class="fa fa-linkedin-square"></i></a></li>
+                <li><a href="https://github.com/Dantlu"><i class="fa fa-github"></i></a></li>
+            </ul>
+        </div>
+        <div class="footer-bottom">
+            <p>Copyright &copy; 2022 Dante Luongo</p>
+
+        </div>
+
+    </footer>
+
+
+    <script src="script.js"></script>
+</body>
+
+</html>
